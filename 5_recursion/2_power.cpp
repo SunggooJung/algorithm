@@ -4,19 +4,21 @@
 
 #include <iostream>
 #include <utility>
-int res =1;
 using namespace std;
+using ll = long long;
 
-int power(int a,int b,int m){
-    if(b<=0) return res%m;
-    res = (res*a)%m;
-    return power(res,b-1,m);
+ll res =1;
+ll power(ll a,ll b,ll m){
+    ll val  = 1;
+    while(b--) val  = val *a % m;
+    return val;
 }
 
 
 int main(void){
-    int a=6, b=100, m=5;
-    int res = power(a,b,m);
-    cout << res << endl;
+    ll a=12, b=116;
+    ll m=67;
+    ll result = power(a,b,m);
+    cout << result << endl;
     return 0;
 }
