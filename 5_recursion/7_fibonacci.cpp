@@ -1,3 +1,12 @@
+/*
+ * fibonacci 
+ * n = n-1+n-2
+ * 1 1 2 3 5 8 ....
+ * break condition if n<3, return 1
+ * recursion equation n = (n-1) + (n-2)
+ */
+
+
 #include <iostream>
 using namespace std;
 
